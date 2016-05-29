@@ -98,6 +98,11 @@ app.config(
                         templateUrl: 'assets/view/task_2_intro.html',
                         activetab: 'task_2'
                     })
+                    .when('/task_2/init', {
+                        controller: 'Task2InitCtrl',
+                        templateUrl: 'assets/view/task_2_init.html',
+                        activetab: 'task_2'
+                    })
                     .when('/task_3', {
                         controller: 'Task3Ctrl',
                         templateUrl: 'assets/view/task_3.html',
@@ -163,7 +168,7 @@ app.controller("Task2Ctrl", ['$scope', function ($scope) {
 
     }]);
 
-app.controller("Task2IntroCtrl", ['$scope','$location', function ($scope,$location) {
+app.controller("Task2IntroCtrl", ['$scope', '$location', function ($scope, $location) {
         console.log("I am Task2IntroCtrl");
         $scope.labels = ["Download Sales", "In-Store Sales"];
         $scope.data = [300, 500];
@@ -180,9 +185,23 @@ app.controller("Task2IntroCtrl", ['$scope','$location', function ($scope,$locati
 
         $scope.start = function () {
             console.log("I am called Task2IntroCtrl:start");
-            $location.path('/task_2');
+            $location.path('/task_2/init');
         };
     }]);
+
+app.controller("Task2InitCtrl", ['$scope', '$location', function ($scope, $location) {
+        console.log("I am Task2InitCtrl");
+
+        $scope.play = function () {
+            console.log("I am called Task2IntroCtrl:start");
+            $location.path('/task_2');
+        };
+        
+        $scope.generateRandomNum = function () {
+            console.log("I am called Task2IntroCtrl:start");
+        };
+    }]);
+
 
 app.controller("Task3Ctrl", ['$scope', function ($scope) {
         console.log("I am Task3Ctrl");
