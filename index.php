@@ -5,7 +5,7 @@
         <title>Survey</title>
         <!-- External CSS Dependecy -->
         <link rel="stylesheet" type="text/css" href="assets/lib/css/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="bower_components/angular-chart.js/dist/angular-chart.css">
+        <link rel="stylesheet" href="assets/lib/js/angular-chart.js/angular-chart.css">
 
         <!-- customized CSS -->
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -28,7 +28,7 @@
                     <div class="navbar survey-menu" ng-controller="MenuCntrl">
                         <ul class="nav nav-tabs">
                             <li role="presentation" ng-class="{active: $route.current.activetab === 'task_1'}"><a href="/#/task_1">Task 1</a></li>                    
-                            <li role="presentation" ng-class="{active: $route.current.activetab === 'task_2'}"><a href="/#/task_2">Task 2</a></li>                    
+                            <li role="presentation" ng-class="{active: $route.current.activetab === 'task_2'}"><a href="/#//task_2/intro">Task 2</a></li>                    
                             <li role="presentation" ng-class="{active: $route.current.activetab === 'task_3'}"><a href="/#/task_3">Task 3</a></li>                    
                             <li role="presentation" class="pull-right" ng-class="{active: $route.current.activetab === 'about'}"><a href="/#/about">About</a></li>
                             <div class="clearfix"></div>

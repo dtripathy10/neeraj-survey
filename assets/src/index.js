@@ -93,6 +93,11 @@ app.config(
                         templateUrl: 'assets/view/task_2.html',
                         activetab: 'task_2'
                     })
+                    .when('/task_2/intro', {
+                        controller: 'Task2IntroCtrl',
+                        templateUrl: 'assets/view/task_2_intro.html',
+                        activetab: 'task_2'
+                    })
                     .when('/task_3', {
                         controller: 'Task3Ctrl',
                         templateUrl: 'assets/view/task_3.html',
@@ -103,7 +108,7 @@ app.config(
                         activetab: 'about'
                     })
                     .otherwise({
-                        redirectTo: '/task_2'
+                        redirectTo: '/task_2/intro'
                     });
         }
 );
@@ -158,6 +163,26 @@ app.controller("Task2Ctrl", ['$scope', function ($scope) {
 
     }]);
 
+app.controller("Task2IntroCtrl", ['$scope','$location', function ($scope,$location) {
+        console.log("I am Task2IntroCtrl");
+        $scope.labels = ["Download Sales", "In-Store Sales"];
+        $scope.data = [300, 500];
+        $scope.options = {
+            tooltipEvents: [],
+            showTooltips: true,
+            tooltipCaretSize: 0,
+            responsive: false,
+            maintainAspectRatio: false,
+            onAnimationComplete: function () {
+                this.showTooltip(this.segments, true);
+            }
+        };
+
+        $scope.start = function () {
+            console.log("I am called Task2IntroCtrl:start");
+            $location.path('/task_2');
+        };
+    }]);
 
 app.controller("Task3Ctrl", ['$scope', function ($scope) {
         console.log("I am Task3Ctrl");
