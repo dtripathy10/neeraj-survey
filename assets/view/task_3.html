@@ -1,53 +1,67 @@
-<div  class="row ng-scope" >
-
-
-    <div ng-controller="Task2Ctrl">
-        <div class="panel panel-default">
-            <div class="panel-heading">Question - 1</div>
-            <div class="panel-body">
-                <div class="row">
-                    <div class="col-md-6">
-                        <canvas id="pie" class="chart chart-pie chart-xl  pull-left"  chart-data="data" chart-labels="labels" chart-options="options"
-                                  height="300"></canvas>
-                                            <div class="clearfix"></div>
-
-                    </div>
-
-                    <div class="col-md-6">
-                        <canvas id="pie" class="chart chart-pie chart-xl"  chart-data="data" chart-labels="labels" chart-options="options" height="300"></canvas> 
-                    </div>
-                </div>
-                <div class="row">
-
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet, 
-                        consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Integer posuere erat a ante.Lorem ipsum dolor sit amet, 
-                        consectetur adipiscing elit. Integer posuere erat a ante.</p>
-
-                    <form class="form-horizontal">
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                Option one is this and that&mdash;be sure to include why it's great
-                            </label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                                Option two can be something else and selecting it will deselect option one
-                            </label>
-                        </div>
-                    </form>
-                </div>
-
-            </div>
-            <div class="panel-footer">
-                <button type="button" class="btn btn-success pull-right">Next</button>
-                <div class="clearfix"></div>
-            </div>
-
-        </div>
+<div class="panel panel-default">
+    <div class="panel-heading">Instruction to Play</div>
+    <div class="panel-body">
+        <md-content style="margin: 26px; padding:16px">
+            <h3>Tokens</h3>
+            <md-slider-container>
+                <span>A (1-5)</span>
+                <md-slider flex md-discrete ng-model="tokenA" step="1" min="0" max="5" aria-label="tokenA">
+                </md-slider>
+                <md-input-container>
+                    <input flex type="number" ng-model="tokenA" aria-label="red" aria-controls="tokenA">
+                </md-input-container>
+            </md-slider-container>
+            <md-slider-container>
+                <span>B (6-10)</span>
+                <md-slider flex md-discrete ng-model="tokenB" step="1" min="6" max="10" aria-label="tokenB">
+                </md-slider>
+                <md-input-container>
+                    <input flex type="number" ng-model="tokenB" aria-label="red" aria-controls="tokenB">
+                </md-input-container>
+            </md-slider-container>
+            <md-slider-container>
+                <span>C (11-15)</span>
+                <md-slider flex md-discrete ng-model="tokenC" step="1" min="11" max="15" aria-label="tokenC">
+                </md-slider>
+                <md-input-container>
+                    <input flex type="number" ng-model="tokenC" aria-label="red" aria-controls="tokenC">
+                </md-input-container>
+            </md-slider-container>
+            <md-slider-container>
+                <span>D (16-20)</span>
+                <md-slider flex md-discrete ng-model="tokenD" step="1" min="16" max="20" aria-label="tokenD">
+                </md-slider>
+                <md-input-container>
+                    <input flex type="number" ng-model="tokenD" aria-label="red" aria-controls="tokenD">
+                </md-input-container>
+            </md-slider-container>
+            <md-slider-container>
+                <span>E (21-25)</span>
+                <md-slider flex md-discrete ng-model="tokenE" step="1" min="21" max="25" aria-label="tokenE">
+                </md-slider>
+                <md-input-container>
+                    <input flex type="number" ng-model="tokenE" aria-label="red" aria-controls="tokenE">
+                </md-input-container>
+            </md-slider-container>
+            <md-slider-container>
+                <span>F (26-30)</span>
+                <md-slider flex md-discrete ng-model="tokenF" step="1" min="26" max="30" aria-label="tokenF">
+                </md-slider>
+                <md-input-container>
+                    <input flex type="number" ng-model="tokenF" aria-label="red" aria-controls="tokenF">
+                </md-input-container>
+            </md-slider-container>
+            <md-slider-container>
+                <span>G (31-35)</span>
+                <md-slider flex md-discrete ng-model="tokenG" step="1" min="31" max="35" aria-label="tokenG">
+                </md-slider>
+                <md-input-container>
+                    <input flex type="number" ng-model="tokenG" aria-label="red" aria-controls="tokenG">
+                </md-input-container>
+            </md-slider-container>
+        </md-content>
     </div>
-
-
-</div>
+    <div class="panel-footer ">
+        <md-button class="md-raised md-primary btn-lg pull-right" ng-click="done()">Done</md-button>
+        <div class="clearfix"></div>
+    </div>

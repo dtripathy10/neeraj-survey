@@ -8,8 +8,8 @@
                 <div class="row">
                     <div class="col-md-6">
                         <canvas id="pie" class="chart chart-pie chart-xl  pull-left"  chart-data="data" chart-labels="labels" chart-options="options"
-                                  height="300"></canvas>
-                                            <div class="clearfix"></div>
+                                height="300"></canvas>
+                        <div class="clearfix"></div>
 
                     </div>
 
@@ -25,18 +25,11 @@
                         consectetur adipiscing elit. Integer posuere erat a ante.</p>
 
                     <form class="form-horizontal">
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                Option one is this and that&mdash;be sure to include why it's great
-                            </label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                                Option two can be something else and selecting it will deselect option one
-                            </label>
-                        </div>
+                        <md-radio-group ng-model="data.group1">
+                            <md-radio-button value="Apple" class="md-primary">Apple</md-radio-button>
+                            <md-radio-button value="Banana"> Banana </md-radio-button>
+                            <md-radio-button value="Mango">Mango</md-radio-button>
+                        </md-radio-group>
                     </form>
                 </div>
 

@@ -25,7 +25,7 @@ var getAppID = function () {
     return tvSearchId;
 };
 
-var app = angular.module('myApp', ['ngResource', 'ngRoute', 'chart.js']);
+var app = angular.module('myApp', ['ngResource', 'ngRoute', 'chart.js','ngMaterial']);
 
 app.config(['ChartJsProvider', function (ChartJsProvider) {
         // Configure all charts

@@ -6,6 +6,7 @@
         <!-- External CSS Dependecy -->
         <link rel="stylesheet" type="text/css" href="assets/lib/css/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/lib/js/angular-chart.js/angular-chart.css">
+        <link rel="stylesheet" href="assets/lib/js/angular-material/angular-material.css">
 
         <!-- customized CSS -->
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -16,6 +17,9 @@
         <script src="assets/lib/js/angular-resource.min.js"></script>
         <script src="assets/lib/js/angular-route.min.js"></script>
         <script src="assets/lib/js/angular-chart.js/angular-chart.min.js"></script>
+        <script src="assets/lib/js/angular-animate.js"></script>
+        <script src="assets/lib/js/angular-aria.js"></script>
+        <script src="assets/lib/js/angular-material/angular-material.js"></script>
         <!-- customized JS -->
         <script src="assets/src/index.js"></script>
     </head>
